@@ -1,0 +1,71 @@
+/* Plain-English IP Guide — hand-written, dependency-free */
+:root {
+  --bg: #faf8f4;
+  --panel: #ffffff;
+  --ink: #2b2620;
+  --muted: #6b6055;
+  --accent: #2e6e5e;
+  --accent-soft: #e3efeb;
+  --border: #e5dfd4;
+  --warn-bg: #fdf3e3;
+  --warn-border: #e4b463;
+}
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  line-height: 1.65;
+}
+header.site, footer.site {
+  padding: 0.6rem 1rem;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+footer.site { border-bottom: none; border-top: 1px solid var(--border); margin-top: 3rem; }
+header.site a.home {
+  font-weight: bold;
+  color: var(--accent);
+  text-decoration: none;
+}
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 0 1rem;
+}
+h1, h2, h3 { line-height: 1.25; }
+h1 { font-size: 1.9rem; margin: 0.5rem 0 1rem; }
+h2 { margin-top: 2.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; }
+a { color: var(--accent); }
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-border);
+  border-radius: 0 6px 6px 0;
+}
+code, pre { font-family: Consolas, Menlo, monospace; font-size: 0.85em; }
+pre { padding: 0.8rem; background: #322c26; color: #f4efe8; border-radius: 8px; overflow-x: auto; }
+pre code { color: inherit; background: none; }
+code { background: var(--accent-soft); padding: 0.1em 0.35em; border-radius: 4px; }
+table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: 0.95em; }
+th, td { border: 1px solid var(--border); padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); }
+ul { padding-left: 1.3rem; }
+li { margin: 0.3rem 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+.pagednav { margin-top: 2.5rem; font-size: 0.95em; }
+.cards { list-style: none; padding: 0; }
+.cards li {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin: 0.8rem 0;
+}
+.cards a { font-weight: bold; text-decoration: none; font-size: 1.05em; }
+.cards .desc { color: var(--muted); font-size: 0.92em; margin-top: 0.35rem; }
+.tagline { color: var(--muted); font-style: italic; }
+footer.site p, footer.site small { color: var(--muted); }
